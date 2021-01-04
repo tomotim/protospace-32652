@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
       redirect_to prototype_path(@comment.prototype)
     else
       @prototype = @comment.prototype
-      #@comments = @prototype.comments
+      @comments = @prototype.comment
       render "prototypes/show"
     end
   end
